@@ -1,0 +1,62 @@
+{
+  "weak bias (b=0.4)": {
+    "propensity_max_abs_error": 0.05476890490419495,
+    "true_lift_ipw_over_naive": 0.004576996267887434,
+    "naive_predicted_lift": -0.009100288625397579,
+    "ips_predicted_lift": 0.004324489151310118,
+    "naive_tau": 0.7142857142857143,
+    "ips_tau": 0.9047619047619049,
+    "oracle_vs_estimated_true_saves": [
+      2.120053308921733,
+      2.1200807218532587
+    ]
+  },
+  "default (b=0.8)": {
+    "propensity_max_abs_error": 0.05573982105233233,
+    "true_lift_ipw_over_naive": 0.02423056130304846,
+    "naive_predicted_lift": -0.07496095205954689,
+    "ips_predicted_lift": 0.015497162024292743,
+    "naive_tau": 0.33333333333333337,
+    "ips_tau": 0.9047619047619049,
+    "oracle_vs_estimated_true_saves": [
+      1.4456931638423651,
+      1.445141242404087
+    ]
+  },
+  "strong bias (b=1.4)": {
+    "propensity_max_abs_error": 0.02389333839897334,
+    "true_lift_ipw_over_naive": 0.048900039900347414,
+    "naive_predicted_lift": -0.045360880618071975,
+    "ips_predicted_lift": 0.09377293441493162,
+    "naive_tau": 0.04761904761904762,
+    "ips_tau": 0.8095238095238096,
+    "oracle_vs_estimated_true_saves": [
+      0.9053268327141659,
+      0.9040090338727927
+    ]
+  },
+  "misspecified: exponential decay": {
+    "propensity_max_abs_error": 0.18455328754160805,
+    "true_lift_ipw_over_naive": 0.037231287991516204,
+    "naive_predicted_lift": -0.028662248908644994,
+    "ips_predicted_lift": 0.03232867742400791,
+    "naive_tau": -0.14285714285714288,
+    "ips_tau": 0.7142857142857143,
+    "oracle_vs_estimated_true_saves": [
+      1.311053523388869,
+      1.3023973519436698
+    ]
+  },
+  "little exploration (2% randomized)": {
+    "propensity_max_abs_error": 0.08428643260485025,
+    "true_lift_ipw_over_naive": 0.036238509247652706,
+    "naive_predicted_lift": -0.02055206291563927,
+    "ips_predicted_lift": 0.03957620840142173,
+    "naive_tau": 0.4285714285714286,
+    "ips_tau": 0.8095238095238096,
+    "oracle_vs_estimated_true_saves": [
+      1.4550175157270133,
+      1.453060307171508
+    ]
+  }
+}

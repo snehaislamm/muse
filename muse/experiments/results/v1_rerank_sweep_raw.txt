@@ -1,0 +1,27 @@
+ok
+== lambda=0.85&cap=2&tonediv=0.6
+  saves -0.014 [-0.045, 0.016] p=0.358
+  fresh_saves 0.078 [0.011, 0.152] p=0.0266
+  underrepresented_tone_users_tone_saves -0.035 [-0.271, 0.266] p=0.79
+== lambda=1&cap=0&tonediv=0.6
+  saves -0.0 [-0.03, 0.031] p=0.975
+  fresh_saves 0.033 [-0.032, 0.106] p=0.317
+  underrepresented_tone_users_tone_saves -0.086 [-0.309, 0.19] p=0.515
+== lambda=1&cap=2&tonediv=0
+  saves -0.002 [-0.033, 0.03] p=0.915
+  fresh_saves -0.008 [-0.073, 0.058] p=0.803
+  underrepresented_tone_users_tone_saves -0.179 [-0.386, 0.09] p=0.165
+== lambda=0.85&cap=0&tonediv=0
+  saves -0.013 [-0.043, 0.017] p=0.388
+  fresh_saves 0.062 [-0.004, 0.13] p=0.066
+  underrepresented_tone_users_tone_saves -0.182 [-0.4, 0.081] p=0.161
+== lambda=0.95&cap=3&tonediv=0.3
+  saves -0.006 [-0.036, 0.025] p=0.698
+  fresh_saves 0.059 [-0.005, 0.134] p=0.0897
+  underrepresented_tone_users_tone_saves -0.099 [-0.327, 0.185] p=0.457
+== lambda=0.95&cap=0&tonediv=0.6
+  saves -0.004 [-0.034, 0.027] p=0.803
+  fresh_saves 0.043 [-0.025, 0.114] p=0.218
+  underrepresented_tone_users_tone_saves -0.091 [-0.316, 0.198] p=0.499
+
+[exited with code 0]

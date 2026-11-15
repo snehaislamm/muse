@@ -1,0 +1,70 @@
+{
+  "control": "baseline",
+  "treatment": "ranker",
+  "treatment_params": "",
+  "users": 2000,
+  "days": 3,
+  "arm_sizes": {
+    "control": 1000,
+    "treatment": 1000
+  },
+  "saves": {
+    "control_mean": 7.415,
+    "treatment_mean": 8.696,
+    "lift": 0.172757923128793,
+    "ci95": [
+      0.12439108846518454,
+      0.2209286824541368
+    ],
+    "p_value": 9.79035473944649e-15
+  },
+  "hides": {
+    "control_mean": 0.138,
+    "treatment_mean": 0.125,
+    "lift": -0.09420289855072472,
+    "ci95": [
+      -0.28767123287671237,
+      0.1508053221288514
+    ],
+    "p_value": 0.42765283183180997
+  },
+  "clicks": {
+    "control_mean": 9.52,
+    "treatment_mean": 10.178,
+    "lift": 0.06911764705882373,
+    "ci95": [
+      0.03987226503987366,
+      0.0985681083068078
+    ],
+    "p_value": 3.472139455897546e-06
+  },
+  "fresh_saves": {
+    "control_mean": 0.667,
+    "treatment_mean": 0.218,
+    "lift": -0.6731634182908546,
+    "ci95": [
+      -0.7222242206235013,
+      -0.6163901686115854
+    ],
+    "p_value": 9.138720168731211e-47
+  },
+  "underrepresented_tone_users_tone_saves": {
+    "n": 341,
+    "control_mean": 3.0,
+    "treatment_mean": 2.9941176470588236,
+    "lift": -0.0019607843137254832,
+    "ci95": [
+      -0.2595601219112181,
+      0.3787695491627304
+    ],
+    "p_value": 0.9895460377007278
+  },
+  "server_latency_ms_control": {
+    "p50": 0.848,
+    "p95": 4.5962999999999985
+  },
+  "server_latency_ms_treatment": {
+    "p50": 6.6515,
+    "p95": 12.0511
+  }
+}

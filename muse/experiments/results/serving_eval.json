@@ -1,0 +1,77 @@
+{
+  "ann": {
+    "brute_force_us_per_query": 3981.9333333333334,
+    "sweep": [
+      {
+        "ef": 100,
+        "hnsw_us_per_query": 196.4,
+        "recall_at_100": 0.9975
+      },
+      {
+        "ef": 200,
+        "hnsw_us_per_query": 295.29,
+        "recall_at_100": 0.9969666666666667
+      },
+      {
+        "ef": 400,
+        "hnsw_us_per_query": 460.21666666666664,
+        "recall_at_100": 0.9991666666666666
+      }
+    ]
+  },
+  "recall": {
+    "cand:ann_interest": {
+      "cold_recall": 0.0007317965605561653,
+      "recall": 0.0924403448967315
+    },
+    "cand:ann_mean": {
+      "cold_recall": 0.024881083058909622,
+      "recall": 0.14477641868859034
+    },
+    "cand:fresh": {
+      "cold_recall": 0.2092938163190633,
+      "recall": 0.14307198716663325
+    },
+    "cand:pixie": {
+      "cold_recall": 0,
+      "recall": 0.09113695608582315
+    },
+    "cand:union": {
+      "cold_recall": 0.21002561287961946,
+      "recall": 0.3364748345698817
+    },
+    "slate100:baseline": {
+      "cold_recall": 0.01609952433223564,
+      "recall": 0.07689993984359335
+    },
+    "slate100:full": {
+      "cold_recall": 0.0062202707647274055,
+      "recall": 0.09254060557449369
+    },
+    "slate100:ranker": {
+      "cold_recall": 0.00036589828027808267,
+      "recall": 0.09163825947463405
+    }
+  },
+  "slate": {
+    "baseline": {
+      "catalog_coverage": 0.61165,
+      "intra_list_similarity": 0.8772837934539881,
+      "mean_latency_ms": 0.6740499999999998,
+      "tone_entropy": 0.7837974248127201
+    },
+    "full": {
+      "catalog_coverage": 0.3208,
+      "intra_list_similarity": 0.763886064069372,
+      "mean_latency_ms": 5.524698749999998,
+      "tone_entropy": 0.9398746440434894
+    },
+    "ranker": {
+      "catalog_coverage": 0.3287,
+      "intra_list_similarity": 0.7995897246644446,
+      "mean_latency_ms": 4.051925,
+      "tone_entropy": 0.8028568431016149
+    }
+  },
+  "users_evaluated": 800
+}

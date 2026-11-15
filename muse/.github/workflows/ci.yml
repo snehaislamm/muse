@@ -1,0 +1,34 @@
+name: ci
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - uses: actions/setup-go@v5
+        with: { go-version-file: serving/go.mod, cache: false }  # no third-party Go deps
+      - uses: actions/setup-node@v4
+        with: { node-version: "22" }
+
+      - name: Python deps
+        run: pip install -r ml/requirements.txt ruff
+      - name: Lint (ruff, gofmt)
+        run: |
+          ruff check --config ml/pyproject.toml ml experiments
+          ruff format --check --config ml/pyproject.toml ml experiments
+          test -z "$(gofmt -l serving)" || (gofmt -l serving; exit 1)
+      - name: Build artifacts (data + models)
+        run: cd ml && python run_pipeline.py
+      - name: Python tests
+        run: cd ml && python -m pytest -q tests
+
+      - name: Go vet + tests (race detector, includes Python/Go parity test)
+        run: cd serving && go vet ./... && go test -race ./...
+      - name: Offline evaluation smoke run
+        run: cd serving && go run ./cmd/offline-eval -artifacts ../artifacts -users 100
+
+      - name: Web build, typecheck, tests
+        run: cd web && npm install && npm run typecheck && npm test && npm run build
