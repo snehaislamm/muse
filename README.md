@@ -1,6 +1,6 @@
 # Muse: a visual discovery engine, from candidate retrieval to an online A/B test
 
-[![ci](https://github.com/<your-github-username>/muse/actions/workflows/ci.yml/badge.svg)](https://github.com/<your-github-username>/muse/actions/workflows/ci.yml)
+[![ci](https://github.com/snehaislamm/muse/actions/workflows/ci.yml/badge.svg)](https://github.com/snehaislamm/muse/actions/workflows/ci.yml)
 
 A small, end-to-end Pinterest-style home-feed recommender. It has a Go serving stack, a Python
 ML pipeline, a React/TypeScript client, and an A/B harness that runs simulated users against the
